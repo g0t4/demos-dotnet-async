@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Responsiveness", "Responsiveness\Responsiveness.csproj", "{2475CF2C-23AD-4181-A274-86ECC39D1630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplesInTests", "ExamplesInTests\ExamplesInTests.csproj", "{96F8FC62-1F1F-4930-822E-534A79CFB5B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2475CF2C-23AD-4181-A274-86ECC39D1630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2475CF2C-23AD-4181-A274-86ECC39D1630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2475CF2C-23AD-4181-A274-86ECC39D1630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2475CF2C-23AD-4181-A274-86ECC39D1630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F8FC62-1F1F-4930-822E-534A79CFB5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F8FC62-1F1F-4930-822E-534A79CFB5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F8FC62-1F1F-4930-822E-534A79CFB5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F8FC62-1F1F-4930-822E-534A79CFB5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

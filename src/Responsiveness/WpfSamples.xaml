@@ -1,0 +1,34 @@
+﻿<Window x:Class="Responsiveness.WpfSamples"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WpfSamples" Height="400" Width="550">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="50" />
+			<RowDefinition />
+			<RowDefinition Height="40" />
+			<RowDefinition Height="50" />
+		</Grid.RowDefinitions>
+		<Button Content="Weather - Blocking" Grid.Row="0" Grid.Column="0" Click="WeatherBlockingClick" />
+		<Button Content="Weather - TPL" Grid.Row="0" Grid.Column="1" Click="WeatherTplClick" />
+		<Button Content="Weather - Async" Grid.Row="0" Grid.Column="2" Click="WeatherAsyncClick" />
+
+		<TextBox Name="TextBox" Grid.Row="1" Grid.ColumnSpan="6" />
+
+		<TextBox Name="Status" Grid.Row="2" Grid.ColumnSpan="6" FontSize="20" />
+
+		<Button Content="Mult Blocking" Grid.Row="3" Grid.Column="0" Click="WeatherMultipleBlockingClick" />
+		<Button Content="Mult TPL" Grid.Row="3" Grid.Column="1" Click="WeatherMultipleTplClick" />
+		<Button Content="Mult Async" Grid.Row="3" Grid.Column="2" Click="WeatherMultipleAsyncClick" />
+		<Button Content="Mult Parallel.ForEach" Grid.Row="3" Grid.Column="3" Click="WeatherParallelClick" />
+		<Button Content="Mult PLINQ" Grid.Row="3" Grid.Column="4" Click="WeatherPlinqClick" />
+	</Grid>
+
+</Window>
