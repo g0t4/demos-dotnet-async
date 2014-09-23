@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NotFastEnough.cs" />
+    <Compile Include="NotFastEnoughDone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strike.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bird Strikes.csv">

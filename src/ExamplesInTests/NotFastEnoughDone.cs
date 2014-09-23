@@ -11,15 +11,18 @@
 		[Test]
 		public void BirdStrikes()
 		{
-			// Because we provide bird strike data services and we want to grow our subscriber base
-			// Currently ~ 12 seconds, needs to be 8 seconds, cut 1/3 of time
+			// We provide bird strike data services and we want to grow our subscriber base by 10% in next year
+			// Assume same 10% load we have now
+			// Sequential, assume we don't have much down time, neglible, 100% one worker handling requests
+			// Currently ~ X seconds, need (X/1.1) to be sufficient, maybe X/1.2 is ideal
 			var lines = File.ReadAllLines("Bird Strikes Big.csv");
 
 			var strikesByAirline = lines.Skip(1)
+				.AsParallel()
 				.Select(ParseStrike)
 				.GroupBy(s => s.Airline)
 				.ToDictionary(a => a.Key, a => a.Count());
-			foreach (var airline in strikesByAirline)
+			foreach (var airline in strikesByAirline.OrderByDescending(s => s.Value))
 			{
 				Console.WriteLine("{0}: {1}", airline.Key, airline.Value);
 			}
@@ -80,10 +83,5 @@
 		}
 
 		// Hints: Use PLINQ and AsParallel to speed up
-	}
-
-	public class Strike
-	{
-		public string Airline { get; set; }
 	}
 }
