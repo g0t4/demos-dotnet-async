@@ -59,7 +59,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="NotResponding.xaml">
+    <Page Include="NotRespondingBefore.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NotRespondingAfter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,8 +75,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NotResponding.xaml.cs">
-      <DependentUpon>NotResponding.xaml</DependentUpon>
+    <Compile Include="NotRespondingBefore.xaml.cs">
+      <DependentUpon>NotRespondingBefore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NotRespondingAfter.xaml.cs">
+      <DependentUpon>NotRespondingAfter.xaml</DependentUpon>
     </Compile>
     <Compile Include="WpfSamples.xaml.cs">
       <DependentUpon>WpfSamples.xaml</DependentUpon>

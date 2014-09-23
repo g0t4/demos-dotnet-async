@@ -8,12 +8,9 @@
 	using WeatherNet.Clients;
 	using WeatherNet.Model;
 
-	/// <summary>
-	///     Interaction logic for NotResponding.xaml
-	/// </summary>
-	public partial class NotResponding : Window
+	public partial class NotRespondingAfter : Window
 	{
-		public NotResponding()
+		public NotRespondingAfter()
 		{
 			InitializeComponent();
 		}

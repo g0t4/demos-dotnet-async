@@ -1,7 +1,7 @@
-﻿<Window x:Class="Responsiveness.NotResponding"
+﻿<Window x:Class="Responsiveness.NotRespondingAfter"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="NotResponding" Height="300" Width="550">
+        Title="NotRespondingAfter" Height="300" Width="550">
     <Grid>
 	    <Grid.RowDefinitions>
 		    <RowDefinition Height="50" />
